@@ -7,9 +7,20 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
-// CORS config
+// CORS Config
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  'http://localhost:5173',
+].filter(Boolean); 
+
 const corsOptions = {
-  origin: ['http://localhost:5173'],
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS blocked for origin: ${origin}`));
+    }
+  },
   credentials: true,
   optionsSuccessStatus: 200,
 };
