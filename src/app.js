@@ -7,11 +7,11 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
-// CORS Configuration
+// CORS config
 const corsOptions = {
-  origin: process.env.FRONTEND_URL,
+  origin: ['http://localhost:5173'],
   credentials: true,
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
 };
 
 // Middleware
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.json({
     success: true,
     message: 'Backend Mokan Kitchen API',
-    version: '1.0.0'
+    version: '1.0.0',
   });
 });
 
@@ -32,7 +32,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/pengumuman', pengumumanRoutes);
 app.use('/api/produk', produkRoutes);
 
-// Error Handler (harus di akhir)
+// Error Handler
 app.use(errorHandler);
 
 module.exports = app;
