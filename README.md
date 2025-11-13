@@ -1,4 +1,4 @@
-# 📝 Backend Mokan
+# 📝 Backend Website Mokan Kitchen
 
 Backend Catatan adalah RESTful API sederhana untuk website Mokan Kitchen. Website ini menyediakan fitur lihat produk dan pengumuman serta CRUD bagi admin untuk mengelola produk dan pengumuman.
 
@@ -108,9 +108,9 @@ GET /api/pengumuman
         {
             "id_peng": 1,
             "judul": "Diskon Akhir Tahun Sebesar 20%",
-            "createdAt": 2025-10-10T06:45:29.192+00:00,
+            "createdAt": "2025-10-10T06:45:29.192+00:00",
             "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-            "updatedAt": 2025-10-10T07:13:23.954+00:00
+            "updatedAt": "2025-10-10T07:13:23.954+00:00"
         },
         {
           // data selanjutnya
@@ -134,11 +134,11 @@ GET /api/pengumuman/:id
     "message": "Data pengumuman berhasil diambil",
     "data": [
         {
-            "id_peng": id,
+            "id_peng": 1,
             "judul": "Diskon Akhir Tahun Sebesar 20%",
-            "createdAt": 2025-10-10T06:45:29.192+00:00,
+            "createdAt": "2025-10-10T06:45:29.192+00:00",
             "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-            "updatedAt": 2025-10-10T07:13:23.954+00:00
+            "updatedAt": "2025-10-10T07:13:23.954+00:00"
         }
     ]
 }
@@ -166,7 +166,7 @@ Authorization: Bearer <token>
     "success": true,
     "message": "Pengumuman berhasil dibuat",
     "data": {
-        "id_peng": id,
+        "id_peng": 1,
         "judul": "Produk Baru Kami",
         "createdAt": "2025-11-13T07:36:08.059+00:00",
         "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -198,7 +198,7 @@ Authorization: Bearer <token>
     "success": true,
     "message": "Pengumuman berhasil diupdate",
     "data": {
-        "id_peng": id,
+        "id_peng": 1,
         "judul": "Produk Baru Kami",
         "createdAt": "2025-11-13T07:36:08.059+00:00",
         "deskripsi": "Kami baru saja memproduksi kue kering Butter Almond.",
@@ -266,7 +266,7 @@ GET /api/produk/:id
     "success": true,
     "message": "Data produk berhasil diambil",
     "data": {
-        "id_produk": id,
+        "id_produk": 1,
         "nama": "Marmer Cake",
         "harga": 60000,
         "gambar": "https://link-gambar.com/marmer-cake.jpg",
@@ -289,7 +289,7 @@ Authorization: Bearer <token>
     "nama":"Nastar",
     "harga":"140000",
     "deskripsi":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "gambar": //gambar diuplad pada form-data dengan tipe data file,
+    "gambar": **//gambar diuplad pada form-data dengan tipe data file**,
 }
 ```
 
@@ -333,7 +333,7 @@ Authorization: Bearer <token>
     "success": true,
     "message": "Produk berhasil diupdate",
     "data": {
-        "id_produk": id,
+        "id_produk": 1,
         "nama": "Nastar Keju",
         "harga": 145000,
         "gambar": "https://link-gambar.com/nastar2.jpg", // gambar otomatis disimpan di bucket supabase dan link gambar disimpan pada database
@@ -358,3 +358,4 @@ Authorization: Bearer <token>
     "message": "Produk berhasil dihapus"
 }
 ```
+
