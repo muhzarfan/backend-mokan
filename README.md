@@ -146,7 +146,7 @@ GET /api/pengumuman/:id
 
 ---
 
-### 5. Buat Pengumuman
+### 5. Buat Pengumuman (Hanya Untuk Admin)
 **Request**
 ```http
 POST /api/pengumuman
@@ -177,7 +177,7 @@ Authorization: Bearer <token>
 
 ---
 
-### 6. Edit Pengumuman
+### 6. Edit Pengumuman (Hanya Untuk Admin)
 **Request**
 ```http
 PUT /api/pengumuman/:id
@@ -209,7 +209,7 @@ Authorization: Bearer <token>
 
 ---
 
-### 7. Hapus Pengumuman
+### 7. Hapus Pengumuman (Hanya Untuk Admin)
 **Request**
 ```http
 DELETE /api/pengumuman/:id
@@ -277,7 +277,7 @@ GET /api/produk/:id
 
 ---
 
-### 10. Buat Produk
+### 10. Buat Produk (Hanya Untuk Admin)
 **Request**
 ```http
 POST /api/produk/:id
@@ -310,7 +310,7 @@ Authorization: Bearer <token>
 
 ---
 
-### 11. Edit Produk
+### 11. Edit Produk (Hanya Untuk Admin)
 **Request**
 ```http
 PUT /api/produk/:id
@@ -344,7 +344,7 @@ Authorization: Bearer <token>
 
 ---
 
-### 12. Hapus Produk
+### 12. Hapus Produk (Hanya Untuk Admin)
 **Request**
 ```http
 DELETE /api/produk/:id
@@ -358,6 +358,7 @@ Authorization: Bearer <token>
     "message": "Produk berhasil dihapus"
 }
 ```
+
 
 
 
