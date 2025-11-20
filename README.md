@@ -1,6 +1,6 @@
 # 🍰 Backend Website Mokan Kitchen
 
-Backend Catatan adalah RESTful API sederhana untuk website Mokan Kitchen. Website ini menyediakan fitur lihat produk dan pengumuman serta CRUD bagi admin untuk mengelola produk dan pengumuman.
+Repositori ini adalah RESTful API sederhana untuk website Mokan Kitchen. Website ini menyediakan fitur lihat produk dan pengumuman serta CRUD bagi admin untuk mengelola produk dan pengumuman.
 
 ## Software yang Digunakan
 - **Node.js**  
@@ -358,5 +358,6 @@ Authorization: Bearer <token>
     "message": "Produk berhasil dihapus"
 }
 ```
+
 
 
