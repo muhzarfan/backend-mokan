@@ -1,13 +1,13 @@
-# 📝 Backend Website Mokan Kitchen
+# 🍰 Backend Website Mokan Kitchen
 
 Backend Catatan adalah RESTful API sederhana untuk website Mokan Kitchen. Website ini menyediakan fitur lihat produk dan pengumuman serta CRUD bagi admin untuk mengelola produk dan pengumuman.
 
-## 🚀 Software yang Digunakan
+## Software yang Digunakan
 - **Node.js**  
 - **Express.js**  
 - **Database** menggunakan PostgreSQL pada Supabase
 
-## ⚙️ Instalasi & Menjalankan Server
+## Instalasi & Menjalankan Server
 
 1. Clone repositori:
    ```bash
@@ -36,7 +36,7 @@ Backend Catatan adalah RESTful API sederhana untuk website Mokan Kitchen. Websit
 
 ---
 
-## 🔑 Autentikasi
+## Autentikasi
 Sebagian besar endpoint membutuhkan **token JWT** yang diperoleh saat login. Token dikirimkan melalui header:
 
 ```
@@ -45,7 +45,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 📌 Dokumentasi Endpoint API
+## Dokumentasi Endpoint API
 
 ### 1. Login Admin
 **Request**
@@ -358,4 +358,5 @@ Authorization: Bearer <token>
     "message": "Produk berhasil dihapus"
 }
 ```
+
 
